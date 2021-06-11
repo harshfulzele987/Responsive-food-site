@@ -1,0 +1,363 @@
+/* fonts */
+@font-face {
+	font-family: "Railway-regular";
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: "Railway-bold";
+	src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+	font-family: "Railway-semibold";
+	src: url(../fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+	font-family: "Railway-black";
+	src: url(../fonts/Raleway-Black.ttf);
+}
+/* colors */
+:root {
+	--primary: #eebf00;
+	--secoundary: #232838;
+	--ternary: #6c6c6c;
+	--danger: #fe4545;
+	--pure: #fefefe;
+	--light: #f0f0f0;
+	--heaven: #ffffff;
+	--footer: #20333f;
+}
+body{
+          -webkit-font-smoothing : antalised;
+}
+
+.container {
+	width: 100%;
+	padding: 0, 15px;
+	margin: 0 auto;
+}
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1152px;
+	}
+}
+
+header.topbar{
+          background-color:var(--secoundary);
+          color: var(--pure);
+          font-family: "Railway-semibold";
+          padding: 0.75rem 0;
+}
+header .topbar .auth  div > a{
+          color:var(--pure);
+          text-decoration: none;
+}
+
+header.topbar .container{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+}
+header.topbar .container .auth{
+          display: flex;
+}
+header.topbar .icons a{
+          margin:  0.6rem ;
+}
+header.topbar .auth  .divider{
+          padding: 0 1rem;
+}
+header.topbar .auth div > img{
+          margin: 0 0.35rem;
+
+}
+nav .top{
+          padding:  1.5rem 0;
+}
+ 
+nav .top .container .contact div > h5{
+          font-family: "Railway-black";
+          margin-bottom: 0.26rem;
+}
+
+
+nav .top .container .contact div > h6{
+          font-family: "Railway-medium";
+          letter-spacing: 0.055rem;
+}
+
+nav .top .container .time div > h5{
+          font-family: "Railway-black";
+          margin-bottom: 0.26rem;
+}
+
+nav .top .container .contact img{
+          margin-right: 0.5rem;
+}
+
+
+nav .top .container .time img {
+          margin-right: 0.5rem;
+}
+
+
+.flex{
+          display: flex;
+          }
+.justify-between{
+          justify-content: space-between;
+}
+.justify-center{
+          justify-content: center;
+}
+nav .navbar a{
+          text-decoration: none;
+          color: var(--secoundary);
+          font-family: "Railway-semibold";
+          font-size: 1rem;
+          padding :1rem 1.5rem;
+          transition: all .4s ease;
+}
+#home{
+          background: var(--primary);
+
+}
+nav .navbar a.active{
+          background: var(--primary);
+          color: var(--pure);
+}
+nav .navbar a:hover{
+          background: var(--primary);
+          color: var(--pure);
+}
+.item-center{
+          align-items: center;
+}
+* {
+	margin: 0;
+	padding: 0;
+          box-sizing: border-box;
+
+}
+.magic-shadow{
+          position: relative;
+          background: var(--heaven);
+}
+.magic-shadow::after{
+          content:'';
+          display: block;
+          width:100%;
+          height: 69px;
+          background-image: url('../icons/shadow.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          bottom: -22px;
+          z-index: -1;
+
+}
+header.hero{
+          height :600px;
+          background-image: url(../images/hero.png);
+          background-position:0% 0% ;
+          background-repeat:no-repeat ;
+          overflow: hidden;
+
+}
+/* /header.hero .container{ 
+          margin: 109px;
+} */
+header.hero .welcome span{
+          font-family: "Railway-bold";
+          margin-right: 0.75rem;
+          color:var(--secoundary)
+}
+header.hero .welcome img{
+          height: 52px;
+margin: -12px;
+
+}
+header.hero .container{
+          position: relative;
+      }
+header.hero h1{
+          font-size: "Railway-bold";
+          color:var(--secoundary);
+          font-size: 2.5rem;
+          margin-bottom: .25rem;
+}
+header.hero h1 span{
+          color:var(--primary);
+}
+header.hero p{
+          font-family: "Railway-medium";
+          width: 50%;
+          line-height: 1.5rem;
+          margin-bottom: 1rem;
+}
+.btn{
+          padding :.5rem .75rem;
+          height: 3rem;
+          border-radius: 4px;
+          border: none;
+          line-height: 0.0;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: all .3s ease;
+}
+.btn-primary{
+          background:var(--primary);
+          color:var(--heaven)
+
+
+}
+
+.btn-primary:hover{
+          background:var(--heaven);
+          color:var(--primary);
+          border: 1px solid var(--heaven);
+
+
+
+}
+
+.btn-secoundary:hover{
+          background: var(--heaven);
+          color: var(--secoundary);
+          border: 1px solid var(--heaven);
+
+
+}
+.btn-secoundary{
+          background: var(--secoundary);
+          color: var(--heaven);
+
+}
+header.hero .hero-image{
+          position: absolute;
+          top: -40px;
+          right: 40px;
+}
+
+
+section{
+          padding:4rem 0;
+
+}
+section.top-product{
+          background: var(--light);
+}
+.section-heading{
+          font-family: "Railway-bold";
+          text-align: center;
+          position: relative;
+margin-bottom: 4rem;
+}
+.section-heading:after{
+          content: '';
+          display: block;
+          width:100%;
+          height: 30px;
+          background-image: url(../icons/hr.svg);
+          background-repeat: no-repeat;
+          position:absolute;
+          bottom: -34px;
+          margin-left: 407px;
+      
+}
+/* section.top-product .food-slider .food-card{
+          background: var(--heaven);
+          padding: 1.5 rem;
+          border-radius: 4px;
+
+} */
+ section.top-products .food-slider .food-card .product-image img{
+          width: 80%;
+          height: 200px;
+          object-fit: contain;
+          opacity: .8;
+          padding-bottom:1rem ;
+} 
+section.top-products .food-slider .food-card hr{
+          border: 1px solid var(--heaven);
+          opacity: .8;
+          margin-top: 10px;
+}
+section.top-products .food-slider .food-card{
+          background:var(--heaven);
+          padding:1.5rem 0;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+}
+section.top-product .food-slider .food-card .product-image h2{
+          font-family: "Railway-bold";
+          font-size: 1.3re;
+          margin: .25rem;
+}
+.text-center{
+          text-align: center;
+}
+
+section.top-products .slider .food-slider .food-card .star img{
+          margin-right: .25rem;
+}
+
+section.top-products .slider .food-slider .food-card  .price{
+font-family: "Railway-medium";
+color: var(--danger);
+margin-bottom: 1rem;
+}
+
+section.top-products .slider .food-slider .food-card button{
+
+          font-family: "Railway-medium";
+          color: url(--secoundary);
+          background:var(--heaven);
+          /* background: var(--primary); */
+          border: 2px solid var(--primary);
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          transition:all .3s ease;
+          /* width: 50%; */
+          font-size: .75rem;
+          cursor: pointer;
+          width: 209px;
+          height: 32px;
+          margin-right: 35px;
+
+}                                                                                                             
+section.top-products .food-slider .food-card button:hover{
+          background: var(--primary);
+          color: var(--heaven);
+
+}
+
+.food-slider .food-card button img{
+          background:var(--primary);
+          padding:0.50rem;
+          height:32px;
+          margin-right:1.2rem;
+      }
+
+
+  
